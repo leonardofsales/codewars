@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jul  6 17:52:35 2017
-
-@author: Leonardo Fontes
-
-@leonardofsales
+@author: Leonardo Fontes (@leonardofsales)
 """
 
 
