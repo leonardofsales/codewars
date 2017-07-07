@@ -26,21 +26,17 @@ def tickets(people):
     in the box.
     """
     b_25, b_50 = 0, 0
-    status = ''
     for n in people:
         # No need of change for $25
         if n == 25:
             b_25 += 1
-            status = "YES"
         # $50 requires $25 change
         elif n == 50:
             b_50 += 1
             if b_25 >= 1:
                 b_25 = b_25 - 1
-                status = "YES"
             else:
-                status = "NO"
-                break
+                return "NO"
         # $100 requires $50 + $25 or 3x$25
         elif n == 100:
             if (b_50 >= 1 & b_25 >= 1):
@@ -48,8 +44,6 @@ def tickets(people):
                 b_25 = b_25 - 1
             elif (b_25 >= 3):
                 b_25 = b_25 - 3
-                status = "YES"
             else:
-                status = "NO"
-                break
-    return status
+                return "NO"
+    return "YES"
