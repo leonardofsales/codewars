@@ -34,16 +34,16 @@ def tickets(people):
         elif n == 50:
             b_50 += 1
             if b_25 >= 1:
-                b_25 = b_25 - 1
+                b_25 -= 1
             else:
                 return "NO"
         # $100 requires $50 + $25 or 3x$25
         elif n == 100:
             if (b_50 >= 1 & b_25 >= 1):
-                b_50 = b_50 - 1
-                b_25 = b_25 - 1
+                b_50 -= 1
+                b_25 -= 1
             elif (b_25 >= 3):
-                b_25 = b_25 - 3
+                b_25 -= - 3
             else:
                 return "NO"
     return "YES"
