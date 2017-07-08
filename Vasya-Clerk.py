@@ -3,7 +3,6 @@
 """
 Created on Thu Jul  6 23:51:09 2017
 @author: Leonardo Fontes (@leonardofsales)
-"""
 
 # Problem:
 # The new "Avengers" movie has just been released!
@@ -17,6 +16,8 @@ Created on Thu Jul  6 23:51:09 2017
 # in the line?
 # Return YES, if Vasya can sell a ticket to each person and give the change.
 # Otherwise return NO.
+
+"""
 
 
 def tickets(people):
